@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/Me/Me",
+    "pages/logs/logs",
+    "pages/test/test",
+    "pages/models/models",
+    "pages/modelpic/modelpic",
+    "pages/modelvideo/modelvideo",
+    "pages/database/gallory/gallory"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "你的后宫",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#2c2c2c",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/danhuang.png",
+        "selectedIconPath": "images/danhuang-active.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "模特",
+        "iconPath": "images/binggan.png",
+        "selectedIconPath": "images/binggan-active.png"
+      },
+      {
+        "pagePath": "pages/Me/Me",
+        "text": "个人中心",
+        "iconPath": "images/huasheng.png",
+        "selectedIconPath": "images/huasheng-active.png"
+      },
+      {
+        "pagePath": "pages/test/test",
+        "text": "测试",
+        "iconPath": "images/huasheng.png",
+        "selectedIconPath": "images/huasheng-active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

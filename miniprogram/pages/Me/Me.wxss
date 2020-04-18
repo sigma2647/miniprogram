@@ -1,0 +1,42 @@
+.user{
+  margin: 10px;
+}
+.user_info{
+  height: 150rpx;
+  border-left: none;
+  border-bottom: 3rpx solid plum;
+  display: flex;
+  align-items: center;
+}
+.user_info image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.user_info text{
+  margin-left: 10rpx;
+}
+
+.user_info button{
+  background: rgb(115, 109, 197);
+  width: 60%;
+  float: right;
+  color: #ffffff;
+} 
+
+/* .image {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  padding-top:10px;
+}
+ */

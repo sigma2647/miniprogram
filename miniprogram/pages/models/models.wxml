@@ -1,0 +1,62 @@
+<!--miniprogram/pages/models/models.wxml-->
+<!-- 滚动图 -->
+  <view>
+    <swiper circular indicator-dots autoplay>
+      <swiper-item wx:for="{{model.infoswiper}}" wx:key="index">
+        <image src="{{item}}"></image>
+      </swiper-item>
+    </swiper>
+  <!-- </view>
+  <view wx:for='{{model.compcard}}'>
+  <image src="{{item.compcard}}"></image> -->
+  </view>
+<!-- 滚动图 -->
+
+<!-- <image src='{{model.indexsrc}}'/>
+<view wx:for="{{model}}">
+<text></text>
+</view>
+<image src='{{model.indexsrc}}'/> -->
+
+<!-- 模特信息文字 -->
+  <view class="modelinfo" >
+      <label class="modelname">{{model.name}}</label>
+    <view class="detial">
+      <view>
+        <text>模特信息</text>
+        <text>\nDETIAL</text>
+      </view>
+      <label>{{model.height}}|</label>
+      <label>{{model.shoes}}|</label>
+      <label>{{model.measurements}}|</label>
+      <label>{{model.modeltype}}|</label>
+    </view>
+  </view>
+<!-- 模特信息文字 -->
+
+<!-- 链接 -->
+  <view>
+    <block>
+      <text></text>
+      <!-- <navigator url="../../pages/modelpic/modelpic?id={{item._id}}" > -->
+      <image class='modelinfo' id ="{{model._id}}" src='{{model.indexsrc}}' bindtap="infoToSnap"/>
+      <!-- </navigator> -->
+    
+      <navigator url="../../pages/modelpic/modelpic" >
+      <image class='modelinfo' id = "{{item._id}}" src='{{model.indexsrc}}' bindtap="infoToSnap" ></image>
+      </navigator>
+    </block>
+  </view>
+  <view>
+  <image src="{{model.compcard}}">
+  </image>
+  </view>
+<!-- 链接 -->
+
+
+<!-- <text>身高</text>
+<text>三围</text>
+<text>鞋码</text>
+<text>{{item.name}}</text>
+<text>{{item.measurements}}</text>
+  <text>{{item.shoes}}</text> -->

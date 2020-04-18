@@ -1,0 +1,36 @@
+<view class="index">
+  <!-- 滚动栏↓ -->
+      <swiper class = "index_swiper" indicator-dots="{{true}}}"
+        autoplay="{{false}}" circular="{{true}}"><!-- '自动轮播' -->
+        <block wx:for="{{imgUrls}}" wx:key="*this">
+          <swiper-item>
+            <image src = "{{item}}" class="slide_images"/>
+          </swiper-item>
+        </block>
+      </swiper>
+  <!-- 滚动栏↑ -->
+
+  <!--Tab布局↓-->
+    <view class="tab2">
+    <view data-i="0" bindtap="setTabIndex" class="{{activeIndex===0?'active':''}}">中模</view>
+    <view data-i="1" bindtap="setTabIndex" class="{{activeIndex===1?'active':''}}">外模</view>
+    </view>
+  <!-- tab布局↑ -->
+
+
+  <!-- 内容↓ -->
+    <!--  -->
+
+  <!-- 获取数据库内首页的图片和名称 -->
+  <view class="modeindex">
+      <view wx:if='{{activeIndex===1}}'class="model" wx:for="{{index}}" wx:key="index">
+            <image id = "{{item._id}}"src="{{item.indexsrc}}" bindtap="toInfo"/>
+            <label class="modelname">{{item.name}}</label>
+      </view >
+
+      <view wx:if='{{activeIndex===0}}'>34</view>
+    </view>
+    
+
+  <!-- 内容↑ -->
+</view>

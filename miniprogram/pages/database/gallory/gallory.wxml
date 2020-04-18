@@ -1,0 +1,1 @@
+<button tpye='primary' size='mini' bindtap='chooseImage'>选择图片</button>
